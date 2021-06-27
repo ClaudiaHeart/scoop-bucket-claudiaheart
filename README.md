@@ -2,7 +2,7 @@ My Scoop Bucket
 ==========
 [README 日本語版](README_JP.md)
 
-This Scoop Bucket for me to use.
+This Scoop Bucket for me to use.  
 But if anyone wants to use this Scoop Bucket, you can use it.
 
 [![MIT licensed][shield-license]](#)
@@ -43,7 +43,7 @@ Usage
 
 License
 -------
-This Repository is licensed under the [MIT](LICENSE) license.
+This Repository is licensed under the [MIT](LICENSE) license.  
 Copyright &copy; 2021, ClaudiaHeart
 
 

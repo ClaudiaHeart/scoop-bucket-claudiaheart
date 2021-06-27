@@ -2,7 +2,7 @@ My Scoop Bucket
 ==========
 [README English Ver.](README.md)
 
-自分用のバケットです。
+自分用のバケットです。  
 使いたい人がいればどうぞご自由に。
 
 [![MIT licensed][shield-license]](#)
@@ -45,7 +45,7 @@ scoop bucket add ClaudiaHeart https://github.com/ClaudiaHeart/scoop-bucket-claud
 
 ライセンス
 -------
-This Repository is licensed under the [MIT](LICENSE) license.
+This Repository is licensed under the [MIT](LICENSE) license.  
 Copyright &copy; 2021, ClaudiaHeart
 
 
