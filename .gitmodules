@@ -1,0 +1,3 @@
+[submodule "scoop"]
+	path = scoop
+	url = https://github.com/lukesampson/scoop.git
