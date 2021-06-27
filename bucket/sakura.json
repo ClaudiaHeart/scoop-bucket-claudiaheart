@@ -2,7 +2,7 @@
   "version": "2.4.1",
   "description": "Sakura editor, Text Editor",
   "homepage": "https://sakura-editor.github.io/",
-  "license": "zlib License",
+  "license": "Zlib",
   "url": [
     "https://github.com/sakura-editor/sakura/releases/download/v2.4.1/sakura-tag-v2.4.1-build2849-ee8234f-Win32-Release-Exe.zip",
     "https://bitbucket.org/k_takata/bregonig/downloads/bron420.zip"
