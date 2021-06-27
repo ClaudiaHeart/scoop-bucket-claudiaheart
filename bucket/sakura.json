@@ -1,6 +1,6 @@
 {
   "version": "2.4.1",
-  "description": "install sakura editor.",
+  "description": "Sakura editor, Text Editor",
   "homepage": "https://sakura-editor.github.io/",
   "license": "zlib License",
   "url": [
@@ -16,6 +16,9 @@
     "if(!(Test-Path(\"$persist_dir\"))) { New-Item \"$persist_dir\" -type directory | Out-Null }",
     "if(!(Test-Path(\"$persist_dir\\sakura.ini\"))) { New-Item \"$persist_dir\\sakura.ini\" -type file | Out-Null }"
   ],
+  "uninstaller": {
+    "script": "if (Test-Path \"$dir\\sakura.ini\") { Copy-Item \"$dir\\sakura.ini\" \"$persist_dir\" -Force }"
+  },
   "persist": [
     "sakura.ini"
   ],
