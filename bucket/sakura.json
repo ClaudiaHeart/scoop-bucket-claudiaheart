@@ -1,0 +1,28 @@
+{
+  "version": "2.4.1",
+  "description": "install sakura editor.",
+  "homepage": "https://sakura-editor.github.io/",
+  "license": "zlib License",
+  "url": [
+    "https://github.com/sakura-editor/sakura/releases/download/v2.4.1/sakura-tag-v2.4.1-build2849-ee8234f-Win32-Release-Exe.zip",
+    "https://bitbucket.org/k_takata/bregonig/downloads/bron420.zip"
+  ],
+  "hash": [
+    "4A906B211AF88DE6112E0CD636E867A2699202E36731140D9520B91B6649B319",
+    "15F58DD292AA6FC8FD592FA97A75D58B5680DDF7AA66BA10A2DD5C9F0EE159C1"
+  ],
+  "bin": "sakura.exe",
+  "pre_install": [
+    "if(!(Test-Path(\"$persist_dir\"))) { New-Item \"$persist_dir\" -type directory | Out-Null }",
+    "if(!(Test-Path(\"$persist_dir\\sakura.ini\"))) { New-Item \"$persist_dir\\sakura.ini\" -type file | Out-Null }"
+  ],
+  "persist": [
+    "sakura.ini"
+  ],
+  "shortcuts": [
+    [
+      "sakura.exe",
+      "sakura-editor"
+    ]
+  ]
+}
