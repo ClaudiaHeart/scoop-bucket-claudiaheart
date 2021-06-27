@@ -12,6 +12,7 @@ My Scoop Bucket
 -----------------
 
   * [必要条件](#必要条件)
+  * [インストール](#インストール)
   * [使い方](#使い方)
   * [ライセンス](#ライセンス)
 
@@ -26,19 +27,26 @@ My Scoop Bucket
 - PowerShell must be enabled for your user account e.g. `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 
 
-使い方
+インストール
 -----
-
+### バケットのインストール
 ```sh
 scoop bucket add ClaudiaHeart https://github.com/ClaudiaHeart/scoop-bucket-claudiaheart
 ```
 
 
+使い方
+-----
+### バージョンチェック
+```sh
+.\scoop\bin\checkver.ps1 * -dir . -u
+```
+
+
 ライセンス
 -------
-
-Paddington is licensed under the [MIT](LICENSE) license.
-Copyright &copy; 2020, ClaudiaHeart
+This Repository is licensed under the [MIT](LICENSE) license.
+Copyright &copy; 2021, ClaudiaHeart
 
 
 
