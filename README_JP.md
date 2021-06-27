@@ -1,32 +1,32 @@
 My Scoop Bucket
 ==========
-[README 日本語版](README_JP.md)
+[README English Ver.](README.md)
 
-This Scoop Bucket for me to use.
-But if anyone wants to use this Scoop Bucket, you can use it.
+自分用のバケットです。
+使いたい人がいればどうぞご自由に。
 
 [![MIT licensed][shield-license]](#)
 
 
-Table of Contents
+目次
 -----------------
 
-  * [Requirements](#requirements)
-  * [Usage](#usage)
-  * [License](#license)
+  * [必要条件](#必要条件)
+  * [使い方](#使い方)
+  * [ライセンス](#ライセンス)
 
 
-Requirements
+必要条件
 ------------
 
-See [Scoop Repository](https://github.com/lukesampson/scoop) for details.
+詳細は[Scoopのリポジトリ](https://github.com/lukesampson/scoop)を見てください。
 
 - Windows 7 SP1+ / Windows Server 2008+
 - [PowerShell 5](https://aka.ms/wmf5download) (or later, include [PowerShell Core](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6)) and [.NET Framework 4.5](https://www.microsoft.com/net/download) (or later)
 - PowerShell must be enabled for your user account e.g. `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 
 
-Usage
+使い方
 -----
 
 ```sh
@@ -34,7 +34,7 @@ scoop bucket add ClaudiaHeart https://github.com/ClaudiaHeart/scoop-bucket-claud
 ```
 
 
-License
+ライセンス
 -------
 
 Paddington is licensed under the [MIT](LICENSE) license.
