@@ -12,12 +12,16 @@ But if anyone wants to use this Scoop Bucket, you can use it.
 <!-- omit in toc -->
 Table of Contents
 -----------------
+<details>
+<summary>show</summary>
+
 - [Requirements](#requirements)
 - [Install](#install)
   - [install bucket](#install-bucket)
 - [Usage](#usage)
   - [check version](#check-version)
 - [License & Author](#license--author)
+</details>
 
 
 Requirements
