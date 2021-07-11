@@ -6,7 +6,7 @@
   "architecture": {
     "64bit": {
       "url": "https://a5m2.mmatsubara.com/download/a5m2_2.15.4_x64_r.zip",
-      "hash": ""
+      "hash": "ae57635ecec9c3c592c53c18859f851e4bf632c4812806daaa5a95228e719375"
     },
     "32bit": {
       "url": "https://a5m2.mmatsubara.com/download/a5m2_2.15.3_x86_r.zip",
@@ -14,6 +14,9 @@
     }
   },
   "bin": "A5M2.exe",
+  "persist": [
+    "Portable"
+  ],
   "shortcuts": [
     ["A5M2.exe", "A5M2R"],
     ["A5M2.exe", "A5M2read"]
