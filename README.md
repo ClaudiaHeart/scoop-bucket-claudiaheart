@@ -1,20 +1,23 @@
+<!-- omit in toc -->
 My Scoop Bucket
 ==========
 [README 日本語版](README_JP.md)
 
+[![MIT licensed][shield-license]](https://opensource.org/licenses/MIT)
+
 This Scoop Bucket for me to use.  
 But if anyone wants to use this Scoop Bucket, you can use it.
 
-[![MIT licensed][shield-license]](#)
 
-
+<!-- omit in toc -->
 Table of Contents
 -----------------
-
-  * [Requirements](#requirements)
-  * [Install](#Install)
-  * [Usage](#usage)
-  * [License](#license)
+- [Requirements](#requirements)
+- [Install](#install)
+  - [install bucket](#install-bucket)
+- [Usage](#usage)
+  - [check version](#check-version)
+- [License & Author](#license--author)
 
 
 Requirements
@@ -41,9 +44,9 @@ Usage
 ```
 
 
-License
+License & Author
 -------
-This Repository is licensed under the [MIT](LICENSE) license.  
+[![MIT licensed][shield-license]](LICENSE)  
 Copyright &copy; 2021, ClaudiaHeart
 
 
