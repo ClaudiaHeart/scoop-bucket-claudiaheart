@@ -13,8 +13,11 @@
   ],
   "bin": "sakura.exe",
   "pre_install": [
-    "if(!(Test-Path(\"$persist_dir\"))) { New-Item \"$persist_dir\" -type directory | Out-Null }",
+    "if(!(Test-Path(\"$persist_dir\"))) { New-Item \"$persist_dir\" -type directory | Out-Null; if ($?) { New-Item \"$persist_dir\\init.tmp\" -type file | Out-Null } }",
     "if(!(Test-Path(\"$persist_dir\\sakura.ini\"))) { New-Item \"$persist_dir\\sakura.ini\" -type file | Out-Null }"
+  ],
+  "post_install": [
+    "if(Test-Path(\"$persist_dir\\init.tmp\")) { Remove-Item \"$dir\\sakura.ini\" -Force | Out-Null; Remove-Item \"$persist_dir\\init.tmp\" -Force | Out-Null; }"
   ],
   "uninstaller": {
     "script": "if (Test-Path \"$dir\\sakura.ini\") { Copy-Item \"$dir\\sakura.ini\" \"$persist_dir\" -Force }"
@@ -27,5 +30,8 @@
       "sakura.exe",
       "sakura-editor"
     ]
-  ]
+  ],
+  "checkver": {
+    "github": "https://github.com/sakura-editor/sakura/"
+  }
 }
