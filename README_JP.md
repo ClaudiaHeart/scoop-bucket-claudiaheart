@@ -69,9 +69,9 @@ Copyright &copy; 2021, ClaudiaHeart
 
 
 [shield-license]: https://img.shields.io/badge/license-MIT-blue.svg
-[mit]: https://opensource.org/licenses/MIT
+[mit]: https://licenses.opensource.jp/MIT/MIT.html
 [scoop]: https://github.com/lukesampson/scoop
 [pw5]: https://aka.ms/wmf5download
 [pw_core]: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6
 [dot_net_dl]: https://www.microsoft.com/net/download
-[semver]: http://semver.org/
+[semver]: https://semver.org/lang/ja/
