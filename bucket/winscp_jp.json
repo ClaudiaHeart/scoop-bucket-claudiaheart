@@ -1,5 +1,5 @@
 {
-  "version": "5.19",
+  "version": "5.19.6",
   "description": "Copy files between a local computer and remote servers using FTP, FTPS, SCP, SFTP, WebDAV or S3 file transfer protocols. Add translate japanese file.",
   "homepage": "https://winscp.net",
   "license": "GPL-3.0-or-later",
