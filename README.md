@@ -45,11 +45,13 @@ Usage
 -----
 ### check version
 ```sh
-.\scoop\bin\checkver.ps1 * -dir bucket
+.\scoop\bin\checkver.ps1 -App <App> -Dir <Dir>
+.\scoop\bin\checkver.ps1 -App * -Dir bucket
 ```
 ### update version
 ```sh
-.\scoop\bin\checkver.ps1 * -dir bucket -u
+.\scoop\bin\checkver.ps1 -App <App> -Dir <Dir> -u
+.\scoop\bin\checkver.ps1 -App * -Dir bucket -u
 ```
 
 
