@@ -19,7 +19,7 @@
     "if(!(Test-Path(\"$persist_dir\\RLogin.ini\"))) { New-Item \"$persist_dir\\RLogin.ini\" -type file | Out-Null }"
   ],
   "uninstaller": {
-    "script": "if (Test-Path \"$dir\\RLogin.ini\") { Copy-Item \"$dir\\RLogin.ini\" \"$persist_dir\" -Force }"
+    "script": "if (Test-Path \"$dir\\RLogin.ini\") { Copy-Item -Path \"$dir\\RLogin.ini\" -Destination \"$persist_dir\" -Force }"
   },
   "persist": [
     "RLogin.ini"
