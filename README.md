@@ -45,7 +45,11 @@ Usage
 -----
 ### check version
 ```sh
-.\scoop\bin\checkver.ps1 * -dir . -u
+.\scoop\bin\checkver.ps1 * -dir bucket
+```
+### update version
+```sh
+.\scoop\bin\checkver.ps1 * -dir bucket -u
 ```
 
 
