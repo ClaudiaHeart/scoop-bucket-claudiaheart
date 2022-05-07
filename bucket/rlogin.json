@@ -1,36 +1,34 @@
 {
-  "version": "2.27.0",
-  "description": "Rlogin, SSH Terminal",
-  "homepage": "https://kmiya-culti.github.io/RLogin/",
-  "license": "MIT",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/kmiya-culti/RLogin/files/8636610/rlogin_x64.zip",
-      "hash": "aed3b592b42b30a580245dfb1f009943ba5d99816f77787cebbd147e7d287eff"
+    "version": "2.27.0",
+    "description": "Rlogin, SSH Terminal",
+    "homepage": "https://kmiya-culti.github.io/RLogin/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/kmiya-culti/RLogin/files/8636610/rlogin_x64.zip",
+            "hash": "aed3b592b42b30a580245dfb1f009943ba5d99816f77787cebbd147e7d287eff"
+        },
+        "32bit": {
+            "url": "https://github.com/kmiya-culti/RLogin/files/8636609/rlogin_x32.zip",
+            "hash": "5a3598ccae879a140a8168942224856ceeef37509cb036356badde39acddb31a"
+        }
     },
-    "32bit": {
-      "url": "https://github.com/kmiya-culti/RLogin/files/8636609/rlogin_x32.zip",
-      "hash": "5a3598ccae879a140a8168942224856ceeef37509cb036356badde39acddb31a"
+    "bin": "RLogin.exe",
+    "pre_install": [
+        "if(!(Test-Path(\"$persist_dir\"))) { New-Item \"$persist_dir\" -type directory | Out-Null }",
+        "if(!(Test-Path(\"$persist_dir\\RLogin.ini\"))) { New-Item \"$persist_dir\\RLogin.ini\" -type file | Out-Null }"
+    ],
+    "uninstaller": {
+        "script": "if (Test-Path \"$dir\\RLogin.ini\") { Copy-Item -Path \"$dir\\RLogin.ini\" -Destination \"$persist_dir\" -Force }"
+    },
+    "persist": "RLogin.ini",
+    "shortcuts": [
+        [
+            "RLogin.exe",
+            "RLogin"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/kmiya-culti/RLogin/"
     }
-  },
-  "bin": "RLogin.exe",
-  "pre_install": [
-    "if(!(Test-Path(\"$persist_dir\"))) { New-Item \"$persist_dir\" -type directory | Out-Null }",
-    "if(!(Test-Path(\"$persist_dir\\RLogin.ini\"))) { New-Item \"$persist_dir\\RLogin.ini\" -type file | Out-Null }"
-  ],
-  "uninstaller": {
-    "script": "if (Test-Path \"$dir\\RLogin.ini\") { Copy-Item -Path \"$dir\\RLogin.ini\" -Destination \"$persist_dir\" -Force }"
-  },
-  "persist": [
-    "RLogin.ini"
-  ],
-  "shortcuts": [
-    [
-      "RLogin.exe",
-      "RLogin"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/kmiya-culti/RLogin/"
-  }
 }
