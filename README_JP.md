@@ -20,6 +20,11 @@ My Scoop Bucket
   - [バケットのインストール](#バケットのインストール)
 - [使い方](#使い方)
   - [バージョンチェック](#バージョンチェック)
+  - [バージョン更新](#バージョン更新)
+  - [URLをチェックする](#urlをチェックする)
+  - [概要を出力する](#概要を出力する)
+  - [バージョンチェックと自動更新が設定されているかチェックする](#バージョンチェックと自動更新が設定されているかチェックする)
+  - [アプリマニフェストのJSONをフォーマットする](#アプリマニフェストのjsonをフォーマットする)
 - [バージョニング](#バージョニング)
 - [ライセンス & 作者](#ライセンス--作者)
 </details>
@@ -43,15 +48,37 @@ scoop bucket add ClaudiaHeart https://github.com/ClaudiaHeart/scoop-bucket-claud
 
 使い方
 -----
+- [Scoop/bin][scoop_bin]
+- [App Manifest Autoupdate][scoop_autoupdate]
 ### バージョンチェック
-```sh
-.\scoop\bin\checkver.ps1 -App <App> -Dir <Dir>
-.\scoop\bin\checkver.ps1 -App * -Dir bucket
+```ps
+.\scoop\bin\checkver.ps1 -a <App> -d <Dir> -v <Version>
+.\scoop\bin\checkver.ps1 -a * -d bucket
 ```
 ### バージョン更新
-```sh
-.\scoop\bin\checkver.ps1 -App <App> -Dir <Dir> -u
-.\scoop\bin\checkver.ps1 -App * -Dir bucket -u
+```ps
+.\scoop\bin\checkver.ps1 -a <App> -d <Dir> -v <Version> -Update
+.\scoop\bin\checkver.ps1 -a * -d bucket -Update
+```
+### URLをチェックする
+```ps
+.\scoop\bin\checkurls.ps1 -a <App> -d <Dir>
+.\scoop\bin\checkurls.ps1 -a * -d bucket
+```
+### 概要を出力する
+```ps
+.\scoop\bin\describe.ps1 -a <App> -d <Dir>
+.\scoop\bin\describe.ps1 -a * -d bucket
+```
+### バージョンチェックと自動更新が設定されているかチェックする
+```ps
+.\scoop\bin\missing-checkver.ps1 -a <App> -d <Dir> -v <Version>
+.\scoop\bin\missing-checkver.ps1 -a * -d bucket
+```
+### アプリマニフェストのJSONをフォーマットする
+```ps
+.\scoop\bin\formatjson.ps1 -a <App> -d <Dir>
+.\scoop\bin\formatjson.ps1 -a * -d bucket
 ```
 
 
@@ -76,7 +103,9 @@ Copyright &copy; 2021, ClaudiaHeart
 
 [shield-license]: https://img.shields.io/badge/license-MIT-blue.svg
 [mit]: https://licenses.opensource.jp/MIT/MIT.html
-[scoop]: https://github.com/lukesampson/scoop
+[scoop]: https://github.com/ScoopInstaller/Scoop
+[scoop_bin]: https://github.com/ScoopInstaller/Scoop/tree/master/bin
+[scoop_autoupdate]: https://github.com/ScoopInstaller/Scoop/wiki/App-Manifest-Autoupdate
 [pw5]: https://aka.ms/wmf5download
 [pw_core]: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6
 [dot_net_dl]: https://www.microsoft.com/net/download

@@ -19,7 +19,12 @@ Table of Contents
 - [Install](#install)
   - [install bucket](#install-bucket)
 - [Usage](#usage)
-  - [check version](#check-version)
+  - [Check Version](#check-version)
+  - [Update Version](#update-version)
+  - [Check URL](#check-url)
+  - [Describe](#describe)
+  - [Missing Check Version](#missing-check-version)
+  - [Format JSON](#format-json)
 - [Versioning](#versioning)
 - [License & Author](#license--author)
 </details>
@@ -43,15 +48,37 @@ scoop bucket add ClaudiaHeart https://github.com/ClaudiaHeart/scoop-bucket-claud
 
 Usage
 -----
-### check version
-```sh
-.\scoop\bin\checkver.ps1 -App <App> -Dir <Dir>
-.\scoop\bin\checkver.ps1 -App * -Dir bucket
+- [Scoop/bin][scoop_bin]
+- [App Manifest Autoupdate][scoop_autoupdate]
+### Check Version
+```ps
+.\scoop\bin\checkver.ps1 -a <App> -d <Dir> -v <Version>
+.\scoop\bin\checkver.ps1 -a * -d bucket
 ```
-### update version
-```sh
-.\scoop\bin\checkver.ps1 -App <App> -Dir <Dir> -u
-.\scoop\bin\checkver.ps1 -App * -Dir bucket -u
+### Update Version
+```ps
+.\scoop\bin\checkver.ps1 -a <App> -d <Dir> -v <Version> -Update
+.\scoop\bin\checkver.ps1 -a * -d bucket -Update
+```
+### Check URL
+```ps
+.\scoop\bin\checkurls.ps1 -a <App> -d <Dir>
+.\scoop\bin\checkurls.ps1 -a * -d bucket
+```
+### Describe
+```ps
+.\scoop\bin\describe.ps1 -a <App> -d <Dir>
+.\scoop\bin\describe.ps1 -a * -d bucket
+```
+### Missing Check Version
+```ps
+.\scoop\bin\missing-checkver.ps1 -a <App> -d <Dir> -v <Version>
+.\scoop\bin\missing-checkver.ps1 -a * -d bucket
+```
+### Format JSON
+```ps
+.\scoop\bin\formatjson.ps1 -a <App> -d <Dir>
+.\scoop\bin\formatjson.ps1 -a * -d bucket
 ```
 
 
@@ -76,7 +103,9 @@ Copyright &copy; 2021, ClaudiaHeart
 
 [shield-license]: https://img.shields.io/badge/license-MIT-blue.svg
 [mit]: https://opensource.org/licenses/MIT
-[scoop]: https://github.com/lukesampson/scoop
+[scoop]: https://github.com/ScoopInstaller/Scoop
+[scoop_bin]: https://github.com/ScoopInstaller/Scoop/tree/master/bin
+[scoop_autoupdate]: https://github.com/ScoopInstaller/Scoop/wiki/App-Manifest-Autoupdate
 [pw5]: https://aka.ms/wmf5download
 [pw_core]: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6
 [dot_net_dl]: https://www.microsoft.com/net/download
