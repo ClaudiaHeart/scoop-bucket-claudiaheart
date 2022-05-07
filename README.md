@@ -22,6 +22,7 @@ Table of Contents
   - [Check Version](#check-version)
   - [Update Version](#update-version)
   - [Check URL](#check-url)
+  - [Check Hash](#check-hash)
   - [Describe](#describe)
   - [Missing Check Version](#missing-check-version)
   - [Format JSON](#format-json)
@@ -41,7 +42,7 @@ See [Scoop Repository][scoop] for details.
 Install
 -----
 ### install bucket
-```sh
+```pwsh
 scoop bucket add ClaudiaHeart https://github.com/ClaudiaHeart/scoop-bucket-claudiaheart
 ```
 
@@ -51,32 +52,37 @@ Usage
 - [Scoop/bin][scoop_bin]
 - [App Manifest Autoupdate][scoop_autoupdate]
 ### Check Version
-```ps
+```pwsh
 .\scoop\bin\checkver.ps1 -a <App> -d <Dir> -v <Version>
 .\scoop\bin\checkver.ps1 -a * -d bucket
 ```
 ### Update Version
-```ps
-.\scoop\bin\checkver.ps1 -a <App> -d <Dir> -v <Version> -Update
-.\scoop\bin\checkver.ps1 -a * -d bucket -Update
+```pwsh
+.\scoop\bin\checkver.ps1 -a <App> -d <Dir> -v <Version> -u
+.\scoop\bin\checkver.ps1 -a * -d bucket -u
 ```
 ### Check URL
-```ps
+```pwsh
 .\scoop\bin\checkurls.ps1 -a <App> -d <Dir>
 .\scoop\bin\checkurls.ps1 -a * -d bucket
 ```
+### Check Hash
+```pwsh
+.\scoop\bin\checkhashes.ps1 -a <App> -d <Dir>
+.\scoop\bin\checkhashes.ps1 -a * -d bucket
+```
 ### Describe
-```ps
+```pwsh
 .\scoop\bin\describe.ps1 -a <App> -d <Dir>
 .\scoop\bin\describe.ps1 -a * -d bucket
 ```
 ### Missing Check Version
-```ps
+```pwsh
 .\scoop\bin\missing-checkver.ps1 -a <App> -d <Dir> -v <Version>
 .\scoop\bin\missing-checkver.ps1 -a * -d bucket
 ```
 ### Format JSON
-```ps
+```pwsh
 .\scoop\bin\formatjson.ps1 -a <App> -d <Dir>
 .\scoop\bin\formatjson.ps1 -a * -d bucket
 ```

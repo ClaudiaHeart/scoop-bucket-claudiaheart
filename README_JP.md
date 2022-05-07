@@ -22,6 +22,7 @@ My Scoop Bucket
   - [バージョンチェック](#バージョンチェック)
   - [バージョン更新](#バージョン更新)
   - [URLをチェックする](#urlをチェックする)
+  - [ハッシュ値をチェックする](#ハッシュ値をチェックする)
   - [概要を出力する](#概要を出力する)
   - [バージョンチェックと自動更新が設定されているかチェックする](#バージョンチェックと自動更新が設定されているかチェックする)
   - [アプリマニフェストのJSONをフォーマットする](#アプリマニフェストのjsonをフォーマットする)
@@ -41,7 +42,7 @@ My Scoop Bucket
 インストール
 -----
 ### バケットのインストール
-```sh
+```pwsh
 scoop bucket add ClaudiaHeart https://github.com/ClaudiaHeart/scoop-bucket-claudiaheart
 ```
 
@@ -51,32 +52,37 @@ scoop bucket add ClaudiaHeart https://github.com/ClaudiaHeart/scoop-bucket-claud
 - [Scoop/bin][scoop_bin]
 - [App Manifest Autoupdate][scoop_autoupdate]
 ### バージョンチェック
-```ps
+```pwsh
 .\scoop\bin\checkver.ps1 -a <App> -d <Dir> -v <Version>
 .\scoop\bin\checkver.ps1 -a * -d bucket
 ```
 ### バージョン更新
-```ps
-.\scoop\bin\checkver.ps1 -a <App> -d <Dir> -v <Version> -Update
-.\scoop\bin\checkver.ps1 -a * -d bucket -Update
+```pwsh
+.\scoop\bin\checkver.ps1 -a <App> -d <Dir> -v <Version> -u
+.\scoop\bin\checkver.ps1 -a * -d bucket -u
 ```
 ### URLをチェックする
-```ps
+```pwsh
 .\scoop\bin\checkurls.ps1 -a <App> -d <Dir>
 .\scoop\bin\checkurls.ps1 -a * -d bucket
 ```
+### ハッシュ値をチェックする
+```pwsh
+.\scoop\bin\checkhashes.ps1 -a <App> -d <Dir>
+.\scoop\bin\checkhashes.ps1 -a * -d bucket
+```
 ### 概要を出力する
-```ps
+```pwsh
 .\scoop\bin\describe.ps1 -a <App> -d <Dir>
 .\scoop\bin\describe.ps1 -a * -d bucket
 ```
 ### バージョンチェックと自動更新が設定されているかチェックする
-```ps
+```pwsh
 .\scoop\bin\missing-checkver.ps1 -a <App> -d <Dir> -v <Version>
 .\scoop\bin\missing-checkver.ps1 -a * -d bucket
 ```
 ### アプリマニフェストのJSONをフォーマットする
-```ps
+```pwsh
 .\scoop\bin\formatjson.ps1 -a <App> -d <Dir>
 .\scoop\bin\formatjson.ps1 -a * -d bucket
 ```
