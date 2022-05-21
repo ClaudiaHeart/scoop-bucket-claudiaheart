@@ -1,16 +1,16 @@
 {
-    "version": "2.17.0",
+    "version": "2.17.1",
     "description": "A5M2 for Readonly version, High-performance and lightweight general-purpose SQL client",
     "homepage": "https://a5m2.mmatsubara.com",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://a5m2.mmatsubara.com/download/a5m2_2.17.0_x64_r.zip",
-            "hash": "c359c474882d55f6493d761460b84a79fe14dd92222049da89dddaf8280e9ea5"
+            "url": "https://a5m2.mmatsubara.com/download/a5m2_2.17.1_x64_r.zip",
+            "hash": "d2fc87f990f68613f273f996b6b6f3c4c10f9cf2fe210ff14ea467a6ea1a80c6"
         },
         "32bit": {
-            "url": "https://a5m2.mmatsubara.com/download/a5m2_2.17.0_x86_r.zip",
-            "hash": "18dfe2f677713c01c50d48c4a47e19b9b93205f5a10f516aa4431ba2e3334ad6"
+            "url": "https://a5m2.mmatsubara.com/download/a5m2_2.17.1_x86_r.zip",
+            "hash": "b3d56dd7b34968df31dfc3a976db0ed05d18f141b5d5e2d6b639525f2140a94a"
         }
     },
     "bin": "A5M2.exe",
