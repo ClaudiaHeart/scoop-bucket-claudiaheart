@@ -103,7 +103,7 @@ Releases are made in the following format
 License & Author
 -------
 [![MIT licensed][shield-license]](LICENSE)  
-Copyright &copy; 2021, ClaudiaHeart
+Copyright &copy; 2022, ClaudiaHeart
 
 
 

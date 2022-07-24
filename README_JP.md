@@ -103,7 +103,7 @@ scoop bucket add ClaudiaHeart https://github.com/ClaudiaHeart/scoop-bucket-claud
 ライセンス & 作者
 -------
 [![MIT licensed][shield-license]](LICENSE)  
-Copyright &copy; 2021, ClaudiaHeart
+Copyright &copy; 2022, ClaudiaHeart
 
 
 
