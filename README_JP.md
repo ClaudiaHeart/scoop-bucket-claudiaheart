@@ -26,6 +26,7 @@ My Scoop Bucket
   - [概要を出力する](#概要を出力する)
   - [バージョンチェックと自動更新が設定されているかチェックする](#バージョンチェックと自動更新が設定されているかチェックする)
   - [アプリマニフェストのJSONをフォーマットする](#アプリマニフェストのjsonをフォーマットする)
+- [メンテナンス](#メンテナンス)
 - [バージョニング](#バージョニング)
 - [ライセンス & 作者](#ライセンス--作者)
 </details>
@@ -85,6 +86,13 @@ scoop bucket add ClaudiaHeart https://github.com/ClaudiaHeart/scoop-bucket-claud
 ```pwsh
 .\scoop\bin\formatjson.ps1 -a <App> -d <Dir>
 .\scoop\bin\formatjson.ps1 -a * -d bucket
+```
+
+
+メンテナンス
+-----
+```pwsh
+git submodule update --remote scoop
 ```
 
 

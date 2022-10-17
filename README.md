@@ -26,6 +26,7 @@ Table of Contents
   - [Describe](#describe)
   - [Missing Check Version](#missing-check-version)
   - [Format JSON](#format-json)
+- [Maintenance](#maintenance)
 - [Versioning](#versioning)
 - [License & Author](#license--author)
 </details>
@@ -85,6 +86,13 @@ Usage
 ```pwsh
 .\scoop\bin\formatjson.ps1 -a <App> -d <Dir>
 .\scoop\bin\formatjson.ps1 -a * -d bucket
+```
+
+
+Maintenance
+-----
+```pwsh
+git submodule update --remote scoop
 ```
 
 
