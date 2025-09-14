@@ -1,16 +1,16 @@
 {
-    "version": "2.27.0",
+    "version": "2.30.8",
     "description": "Rlogin, SSH Terminal",
     "homepage": "https://kmiya-culti.github.io/RLogin/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kmiya-culti/RLogin/files/8636610/rlogin_x64.zip",
-            "hash": "aed3b592b42b30a580245dfb1f009943ba5d99816f77787cebbd147e7d287eff"
+            "url": "https://github.com/kmiya-culti/RLogin/releases/download/2.30.8/rlogin_x64.zip",
+            "hash": "3f033034476abf6ccdafd9972c3052a61444e139de42bf1cd0ec54a18d0301e0"
         },
         "32bit": {
-            "url": "https://github.com/kmiya-culti/RLogin/files/8636609/rlogin_x32.zip",
-            "hash": "5a3598ccae879a140a8168942224856ceeef37509cb036356badde39acddb31a"
+            "url": "https://github.com/kmiya-culti/RLogin/releases/download/2.30.8/rlogin_x32.zip",
+            "hash": "4a370f908e446952968e88f5122770be9eb96987f5fcafeeda6be37eb905be5c"
         }
     },
     "bin": "RLogin.exe",
@@ -30,5 +30,15 @@
     ],
     "checkver": {
         "github": "https://github.com/kmiya-culti/RLogin/"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/kmiya-culti/RLogin/releases/download/$version/rlogin_x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/kmiya-culti/RLogin/releases/download/$version/rlogin_x32.zip"
+            }
+        }
     }
 }
